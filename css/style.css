@@ -4,7 +4,7 @@ height: 60vh;
 background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/banner.jpg);
+  background-image: url(./images/banner.jpg);
 }
 .div-img img{
 height: 300px;
