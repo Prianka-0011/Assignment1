@@ -23,3 +23,44 @@ list-style: none;
 .foot{
     padding: 40px;
 }
+
+/*about me*/
+.aboutme h1{
+color: cornflowerblue;
+font-size: 4rem;
+font-family: Arial;
+}
+.aboutme h2{
+  color: cornflowerblue;
+  font-size: 2rem;
+  font-family: Arial;
+  }
+.aboutme p span{
+color: chocolate;
+font-family: Arial;
+}
+
+.aboutme h2 {
+  color: cornflowerblue;
+}
+
+
+.fav-movie h1 {
+  color: cornflowerblue;
+}
+.fav-movie ul {
+  list-style-type: decimal;
+}
+
+
+.fav-movie ul li a{
+  text-decoration: none;
+  color: brown;
+}
+
+/*p::first-letter {
+  font-size: 3em;
+  float: left;
+  margin-right: 5px;
+  line-height: 0.8;
+}
