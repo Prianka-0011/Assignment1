@@ -269,7 +269,7 @@ cursor: default;
       transition: .5s ease;
     }
     .myMood-box img{
-      height: 15rem;
+      height: 25rem;
       border-radius: 2rem 2rem 0 0;
       width: 100%;
     }
