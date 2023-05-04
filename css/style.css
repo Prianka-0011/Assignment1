@@ -72,6 +72,7 @@ border-color: var(--main-color);
 
 .home-content{
   font-size: 1.6rem;
+  padding-right: 15rem;
 }
 .home-content h3{
   font-size: 3.2rem;
