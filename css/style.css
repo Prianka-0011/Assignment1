@@ -143,11 +143,12 @@ cursor: default;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-bg-color);
   letter-spacing: .1rem;
   font-weight: 600;
   transition: .5s ease;
+ 
 }
 .btn:hover
 {
@@ -189,7 +190,7 @@ cursor: default;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-bg-color);
   letter-spacing: .1rem;
   font-weight: 600;
@@ -217,6 +218,7 @@ cursor: default;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
+  
   }
   .classes-container .classes-box{
     flex: 1 1 30rem;
@@ -225,17 +227,25 @@ cursor: default;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
+    transition: .5s ease;
   }
-
+  .classes-container .classes-box:hover{
+  transform: translateY(-2rem);
+  }
+  .classes-box i{
+   font-size: 7rem;
+   color: var(--main-color);;
+  }
+  .classes-box p{
+    padding: 1rem 0;
+  }
   .myMood{
   justify-content: center;
   align-items: center;
   gap: 2rem;
   background: var(--second-bg-color-color);
   }
-  .myMood-container{
-
-  }
+  
   .myMood h2{
     margin-bottom: 5rem;
     text-align: center;
@@ -265,7 +275,8 @@ cursor: default;
     }
     .myMood-container .myMood-box:hover{
       box-shadow: none;
-      transform: translateY(-2rem);
+      transform: scale(0.8);
+      
     }
 /* 
 .head-Ban {
