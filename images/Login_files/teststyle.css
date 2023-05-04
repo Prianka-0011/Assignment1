@@ -58,56 +58,28 @@
   }
   .left-div{
     width: 100%;
-     display: inline-block;
+   
    
    
   }
-
-
-  
   .child-div {
     width: 80%;
 
   }
   .form-group {
-    width: 100%;
+    width: 80%;
     text-align: left;
-    padding: 1rem 0;
   }
   .img-div{
     width: 80%;
-    display: block;
     text-align: center;
     border: #b8b3b3 solid .1rem;
     background-color:#fff ;
   }
   .img-div img{
     height: 2rem;
+    margin: 1rem 0 1rem 5rem;
   }
-
-  .hr-text {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 1rem;
-  }
-  
-  .hr-text::before,
-  .hr-text::after {
-    content: "";
-    border-top: 0.1rem double rgb(187, 178, 178);
-    align-self: center;
-  }
-
-  .btn,
-  .form-group input {
-    border-radius: .3rem;
-    height: 40px;
-    width: 100%;
-    padding: 8px 10px;
-  }
-  .btn:hover{
-    box-shadow: 0 0 1rem var(--main-color);
-  }
-  .btn img {
-    max-height: 100%;
+  .img-div span{
+    margin: 0rem 0 10rem 0rem;
   }
