@@ -20,7 +20,7 @@ font-family: 'Poppins', sans-serif;
 }
 html{
   font-size: 62.5%;
-  overflow: hidden;
+  overflow: auto;
 }
 body{
 background: var(--bg-color);
@@ -199,6 +199,33 @@ cursor: default;
 {
   box-shadow: none;
 }
+.classes{
+  
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--bg-color);
+}
+.classes h2{
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 5rem;
+}
+.classes .classes-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  }
+  .classes-container .classes-box{
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+  }
 /* 
 .head-Ban {
 width: 100%;
