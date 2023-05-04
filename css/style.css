@@ -226,6 +226,47 @@ cursor: default;
     text-align: center;
     border: .2rem solid var(--bg-color);
   }
+
+  .myMood{
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--second-bg-color-color);
+  }
+  .myMood-container{
+
+  }
+  .myMood h2{
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .myMood .myMood-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    }
+    .myMood-container .myMood-box{
+      flex: 1 1 30rem;
+      background: var(--second-bg-color);
+      
+      border-radius: 2rem;
+      text-align: center;
+      border: .2rem solid var(--bg-color);
+      box-shadow: 0 0 1rem var(--main-color);
+      transition: .5s ease;
+    }
+    .myMood-box img{
+      height: 15rem;
+      border-radius: 2rem 2rem 0 0;
+      width: 100%;
+    }
+    .myMood-container .myMood-box:hover{
+      box-shadow: none;
+      transform: translateY(-2rem);
+    }
 /* 
 .head-Ban {
 width: 100%;
