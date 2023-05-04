@@ -13,6 +13,7 @@
       --second-bg-color:#fff;
       --text-color:#000;
       --main-color:#0ef;
+      --second-color:#1eb9f7;
     
     }
 .header{
@@ -26,11 +27,20 @@
     align-items: center;
     z-index: 100;
   }
- 
+ .compro{
+  display: flex;
+  align-items: center;
+  
+ }
   .header  img {
     width: 2.5rem;
     height: 2.5rem;
-    margin-top: 1rem;
+    margin:1rem 1rem 1rem 1rem;
+    
+  }
+  .compro span{
+    padding-left: 1rem;
+    border-left: #000 solid .1rem;
   }
   .navbar a{
     font-size: 1rem;
@@ -59,7 +69,7 @@
   .left-div{
     width: 100%;
      display: inline-block;
-   
+   border-right:  #b8b3b3 solid .1rem;;
    
   }
 
@@ -88,7 +98,7 @@
   .hr-text {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    gap: 1rem;
+    gap: .5rem;
   }
   
   .hr-text::before,
@@ -104,6 +114,31 @@
     height: 40px;
     width: 100%;
     padding: 8px 10px;
+    cursor: pointer;
+  }
+  .submit{
+    background-color: #000;
+    color: #fff;
+  }
+  .tickt-btn{
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    width: 30%;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: .5rem;
+  }
+  .right-div a{
+    cursor: pointer;
+  }
+  .form-group-remem{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .form-group-remem a{
+    color: var(--second-color);
   }
   .btn:hover{
     box-shadow: 0 0 1rem var(--main-color);
