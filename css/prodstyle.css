@@ -1,0 +1,10 @@
+.navbar .container-fluid .navbar-brand {
+    color: white;
+  }
+  .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link{
+color: white;
+  }
+  .btn-white{
+    background-color: #fff;
+    color: #000;
+  }
