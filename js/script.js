@@ -129,11 +129,11 @@ function sum(arr) {
   function printFibo(n, a, b) {
     let fibo = [a, b];
     
-    // Generate the Fibonacci sequence of length n starting with a and b
+    
     for (let i = 2; i < n; i++) {
       fibo[i] = fibo[i - 1] + fibo[i - 2];
     }
     
-    // Print the Fibonacci sequence
+    
     console.log(fibo.join(", "));
   }
