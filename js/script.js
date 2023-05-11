@@ -232,9 +232,63 @@ const students = [
 // const oddList=numbers.filter(c=>(c%2==1));
 // document.write("Odd Number List: "+oddList);
 
-function askPassword(ok, fail)
-{
-  let password=prompt("Password?", '');
-  if(password=="rockstar") ok();
-  else fail();
-}
+// function askPassword(user, ok, fail) {
+//   function wrapper() {
+//     let password = prompt("Password?", '');
+//     if (password == "rockstar") {
+//       ok.call(user);
+//     } else {
+//       fail.call(user);
+//     }
+//   }
+//   return wrapper;
+// }
+
+// let user = {
+//   name: 'Jonh',
+//   loginOk() {
+//     alert(`${this.name} logged in`);
+//   },
+//   loginFail() {
+//     alert(`${this.name} failed to log in`);
+//   },
+// };
+
+// let wrapper = askPassword(user, user.loginOk.bind(user), user.loginFail.bind(user));
+// wrapper();
+
+// let group = {
+//   title: "Our Group",
+//   students: ["John", "Pete", "Alice"],
+//   showList: function() {
+//     this.students.forEach(function(student) {
+//       console.log(this.title + ": " + student);
+//     }.bind(this));
+//   }
+// };
+
+// group.showList();
+
+
+
+
+
+
+
+
+const user1 = {
+  salute: ""
+  ,
+  greet: function() {
+  this.salute = "Hello";
+  document.write(this.salute); //Hello
+  const setFrench = function(newSalute) { //inner function
+  this.salute = newSalute;
+  };
+  setFrench("Bonjour");
+  document.write(this.salute); //Bonjour??
+  }
+  };
+  user.greet(); //Hello Hello ??
+  
+
