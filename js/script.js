@@ -190,13 +190,13 @@
 // var str="Prianka";
 // var newString=`My name is : ${str} `;
 // document.write(newString);
-const students = [
-  { name: 'Quincy', grades: [99, 88], courses:['cs301', 'cs303']},
-  { name: 'Jason', grades: [29, 38], courses:['cs201', 'cs203']},
-  { name: 'Alexis', grades: [79, 78], courses:['cs105', 'cs211'] },
-  { name: 'Sam', grades: [91, 82], courses:['cs445', 'cs303'] },
-  { name: 'Katie', grades: [66, 77], courses:['cs303', 'cs477'] }
- ];
+// const students = [
+//   { name: 'Quincy', grades: [99, 88], courses:['cs301', 'cs303']},
+//   { name: 'Jason', grades: [29, 38], courses:['cs201', 'cs203']},
+//   { name: 'Alexis', grades: [79, 78], courses:['cs105', 'cs211'] },
+//   { name: 'Sam', grades: [91, 82], courses:['cs445', 'cs303'] },
+//   { name: 'Katie', grades: [66, 77], courses:['cs303', 'cs477'] }
+//  ];
 //  let newStList=students.filter(c=>c.courses.includes('cs303'));
 //  document.write(newStList);
 //  let s = "Connie Client";
@@ -272,7 +272,7 @@ const students = [
 
 
 
-
+ 
 
 
 
@@ -289,6 +289,80 @@ const user1 = {
   document.write(this.salute); //Bonjour??
   }
   };
-  user.greet(); //Hello Hello ??
-  
+  user1.greet(); //Hello Hello ??
 
+
+
+  function sum(arr)
+  {
+    let total=0;
+    for(let i=0;i<arr.length;i++) {
+       total+=arr[i];
+    }
+    return total;
+  }
+  
+let res=sum([1,5,4,8,9]);
+document.write(res);
+
+
+class Employee{
+  #fullname;
+  salary;
+  hireDate;
+  static #counter=0;
+  constructor(fullname, salary, hireDate)
+  {
+    this.#fullname=fullname;
+    this.salary=salary;
+    this.hireDate=hireDate;
+  }
+  calculateSalary()
+  {
+    return this.salary;
+  }
+  static getCounter()
+  {
+    return this.#counter;
+  }
+  static incCounter()
+  {
+    this.#counter+=1;
+  }
+  get fullname()
+  {
+    return this.#fullname;
+  }
+  set fullname(x)
+  {
+    return this.#fullname=x;
+  }
+  get salary()
+  {
+    this.salary;
+  }
+  set salary(x)
+  {
+    this.salary=x;;
+  }
+  get hireDate()
+  {
+    this.hireDate;
+  }
+  set hireDate(x)
+  {
+    this.hireDate=x;
+  }
+}
+class Manager extends Employee {
+  bonus;
+  constructor(fullname,salary,hireDate)
+  {
+    super(fullname,salary,hireDate);
+    this.bonus=0;
+  }
+  calculateSalary()
+  {
+    return 
+  }
+}
