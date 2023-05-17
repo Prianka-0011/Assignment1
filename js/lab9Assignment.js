@@ -68,3 +68,5 @@ let scoreforStudent11 = quiz.scoreStudent(11);
 console.log(scoreforStudent11); //Expected Result: 2
 let average = quiz.getAverageScore();
 console.log(average); //Expected Reuslt: 2.5
+
+
